@@ -29,4 +29,27 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to My Martech Tes
+  <h1>Welcome to My Martech Testing Page</h1>
+  <p>This page is used to test tracking pixels, analytics, and marketing scripts.</p>
+
+  <!-- CTA Buttons -->
+  <button class="cta-button" id="cta-download">Download Brochure</button>
+  <button class="cta-button" id="cta-contact">Contact Sales</button>
+
+  <!-- Example: Tracking scripts -->
+  <script>
+    console.log("Page loaded");
+
+    // Simulate event tracking for buttons
+    document.getElementById("cta-download").addEventListener("click", function () {
+      console.log("CTA Clicked: Download Brochure");
+      // Example: Replace with GA, Segment, or other tracking
+    });
+
+    document.getElementById("cta-contact").addEventListener("click", function () {
+      console.log("CTA Clicked: Contact Sales");
+      // Example: Replace with real marketing tracking
+    });
+  </script>
+</body>
+</html>
