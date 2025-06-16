@@ -43,26 +43,20 @@
   <button class="cta-button" id="cta-contact">Contact Sales</button>
 
   <!-- Example: Tracking scripts -->
-  <script>
-    console.log("Page loaded");
-
-    // Simulate event tracking for buttons
-document.getElementById("cta-download").addEventListener("click", function () {
-  analytics.track('CTA Clicked', {
-    intent: 'Brochure'
-  });
-});
-      // Example: Replace with GA, Segment, or other tracking
-    });
-
+<script>
+  // Ensure Segment analytics.js is already loaded before this runs
   document.getElementById("cta-download").addEventListener("click", function () {
-  analytics.track('CTA Clicked', {
-    intent: 'Sales'
-  });
-});
-
-      // Example: Replace with real marketing tracking
+    analytics.track('CTA Clicked', {
+      intent: 'Brochure'
     });
-  </script>
+  });
+
+  document.getElementById("cta-contact").addEventListener("click", function () {
+    analytics.track('CTA Clicked', {
+      intent: 'Contact Sales'
+    });
+  });
+</script>
+
 </body>
 </html>
