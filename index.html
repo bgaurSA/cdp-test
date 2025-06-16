@@ -47,13 +47,20 @@
     console.log("Page loaded");
 
     // Simulate event tracking for buttons
-    document.getElementById("cta-download").addEventListener("click", function () {
-      console.log("CTA Clicked: Download Brochure");
+document.getElementById("cta-download").addEventListener("click", function () {
+  analytics.track('CTA Clicked', {
+    intent: 'Brochure'
+  });
+});
       // Example: Replace with GA, Segment, or other tracking
     });
 
-    document.getElementById("cta-contact").addEventListener("click", function () {
-      console.log("CTA Clicked: Contact Sales");
+  document.getElementById("cta-download").addEventListener("click", function () {
+  analytics.track('CTA Clicked', {
+    intent: 'Sales'
+  });
+});
+
       // Example: Replace with real marketing tracking
     });
   </script>
